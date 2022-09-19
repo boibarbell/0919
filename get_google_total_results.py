@@ -2,13 +2,8 @@
 import requests,logging
 import time,datetime
 from bs4 import BeautifulSoup
-from selenium.webdriver.chrome.options import Options
-
 
 prefix = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
-# chromedriverの設定
-options = Options()
-options.add_argument('--headless')
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"}
 URL     = "https://www.google.com/search?q="
 
